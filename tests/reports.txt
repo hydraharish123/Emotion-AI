@@ -1,0 +1,66 @@
+y_test = {Anger: np.int64(13),
+ Contempt: np.int64(5),
+ Disgust: np.int64(18),
+ Fear: np.int64(8),
+ Happiness: np.int64(21),
+ Neutral: np.int64(178),
+ Sadness: np.int64(8),
+ Surprise: np.int64(25)}
+
+
+1) for 68 PCA Components (optimal r value given by elbow plot), 10 fold cross validation
+
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.75      0.23      0.35        13
+    Contempt       0.00      0.00      0.00         5
+     Disgust       0.73      0.44      0.55        18
+        Fear       1.00      0.38      0.55         8
+   Happiness       0.94      0.81      0.87        21
+     Neutral       0.80      0.98      0.88       178
+     Sadness       0.00      0.00      0.00         8
+    Surprise       1.00      0.72      0.84        25
+
+    accuracy                           0.81       276
+   macro avg       0.65      0.45      0.51       276
+weighted avg       0.79      0.81      0.78       276
+
+
+array([[  3,   0,   0,   0,   0,  10,   0,   0],
+       [  0,   0,   0,   0,   0,   5,   0,   0],
+       [  1,   1,   8,   0,   0,   8,   0,   0],
+       [  0,   0,   0,   3,   1,   4,   0,   0],
+       [  0,   0,   3,   0,  17,   1,   0,   0],
+       [  0,   3,   0,   0,   0, 175,   0,   0],
+       [  0,   0,   0,   0,   0,   8,   0,   0],
+       [  0,   0,   0,   0,   0,   7,   0,  18]])
+
+
+
+2) For n_components = 20, 10 fold cross validation
+
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.00      0.00      0.00        13
+    Contempt       0.00      0.00      0.00         5
+     Disgust       0.20      0.06      0.09        18
+        Fear       0.00      0.00      0.00         8
+   Happiness       0.91      0.48      0.62        21
+     Neutral       0.73      0.99      0.84       178
+     Sadness       0.00      0.00      0.00         8
+    Surprise       1.00      0.60      0.75        25
+
+    accuracy                           0.73       276
+   macro avg       0.35      0.27      0.29       276
+weighted avg       0.64      0.73      0.66       276
+
+array([[  0,   0,   1,   0,   0,  12,   0,   0],
+       [  0,   0,   0,   0,   0,   5,   0,   0],
+       [  0,   0,   1,   0,   0,  17,   0,   0],
+       [  0,   0,   0,   0,   1,   7,   0,   0],
+       [  1,   0,   3,   0,  10,   7,   0,   0],
+       [  0,   2,   0,   0,   0, 176,   0,   0],
+       [  0,   0,   0,   0,   0,   8,   0,   0],
+       [  0,   0,   0,   0,   0,  10,   0,  15]])
