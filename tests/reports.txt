@@ -8,7 +8,7 @@ y_test = {Anger: np.int64(13),
  Surprise: np.int64(25)}
 
 
-1) for 68 PCA Components (optimal r value given by elbow plot), 10 fold cross validation
+1) for 68 PCA Components (optimal r value given by elbow plot), 10 fold cross validation, all images 64x64
 
 Classification Report:
                precision    recall  f1-score   support
@@ -64,3 +64,98 @@ array([[  0,   0,   1,   0,   0,  12,   0,   0],
        [  0,   2,   0,   0,   0, 176,   0,   0],
        [  0,   0,   0,   0,   0,   8,   0,   0],
        [  0,   0,   0,   0,   0,  10,   0,  15]])
+
+
+
+
+
+
+
+
+
+
+
+New 
+
+
+1) Normal training 
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.62      0.38      0.48        13
+    Contempt       0.14      0.20      0.17         5
+     Disgust       0.83      0.56      0.67        18
+        Fear       1.00      0.38      0.55         8
+   Happiness       0.95      0.86      0.90        21
+     Neutral       0.83      0.97      0.90       178
+     Sadness       0.50      0.25      0.33         8
+    Surprise       0.94      0.64      0.76        25
+
+    accuracy                           0.82       276
+   macro avg       0.73      0.53      0.59       276
+weighted avg       0.83      0.82      0.81       276
+
+array([[  5,   0,   0,   0,   0,   7,   1,   0],
+       [  0,   1,   0,   0,   0,   4,   0,   0],
+       [  0,   0,  10,   0,   1,   7,   0,   0],
+       [  0,   3,   0,   3,   0,   2,   0,   0],
+       [  1,   0,   1,   0,  18,   1,   0,   0],
+       [  1,   2,   1,   0,   0, 172,   1,   1],
+       [  1,   1,   0,   0,   0,   4,   2,   0],
+       [  0,   0,   0,   0,   0,   9,   0,  16]])
+
+
+2) 
+Normal + SMOTE
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.62      0.38      0.48        13
+    Contempt       0.14      0.20      0.17         5
+     Disgust       0.83      0.56      0.67        18
+        Fear       1.00      0.38      0.55         8
+   Happiness       0.95      0.86      0.90        21
+     Neutral       0.83      0.97      0.90       178
+     Sadness       0.50      0.25      0.33         8
+    Surprise       0.94      0.64      0.76        25
+
+    accuracy                           0.82       276
+   macro avg       0.73      0.53      0.59       276
+weighted avg       0.83      0.82      0.81       276
+
+
+3) Subset
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.41      0.50      0.45        14
+    Contempt       0.20      0.20      0.20         5
+     Disgust       0.92      0.61      0.73        18
+        Fear       0.33      0.25      0.29         8
+   Happiness       0.89      0.76      0.82        21
+     Neutral       0.76      0.91      0.83        98
+     Sadness       0.00      0.00      0.00         8
+    Surprise       0.90      0.72      0.80        25
+
+    accuracy                           0.73       197
+   macro avg       0.55      0.49      0.51       197
+weighted avg       0.72      0.73      0.72       197
+
+
+
+4) SMOTE + Subset
+Classification Report:
+               precision    recall  f1-score   support
+
+       Anger       0.50      0.57      0.53        14
+    Contempt       0.33      0.20      0.25         5
+     Disgust       0.85      0.61      0.71        18
+        Fear       0.20      0.12      0.15         8
+   Happiness       0.89      0.76      0.82        21
+     Neutral       0.75      0.94      0.84        98
+     Sadness       0.00      0.00      0.00         8
+    Surprise       0.94      0.68      0.79        25
+
+    accuracy                           0.74       197
+   macro avg       0.56      0.49      0.51       197
+weighted avg       0.72      0.74      0.72       197
