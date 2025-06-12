@@ -5,14 +5,14 @@
 Emotion AI is a startup building real-time facial expression recognition systems, but they face a major challenge: a **small labeled dataset** (expression-annotated images) and a **large unlabeled dataset** (facial images without emotion labels).
 
 We need to classify each face into one of **eight expression categories**:
-    - "Anger", 
-    - "Disgust", 
-    - "Fear", 
-    - "Happiness", 
-    - "Sadness", 
-    - "Surprise", 
-    - "Neutral", 
-    - "Contempt"
+- "Anger", 
+- "Disgust", 
+- "Fear", 
+- "Happiness", 
+- "Sadness", 
+- "Surprise",
+- "Neutral", 
+- "Contempt"
 
 ---
 
