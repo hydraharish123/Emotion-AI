@@ -21,6 +21,9 @@ Classification Report:
    macro avg       0.71      0.49      0.56       276
 weighted avg       0.81      0.81      0.79       276
 
+Best Parameters: {'svc__C': 100, 'svc__gamma': 'scale'}
+Best Score: 0.5270347435335319
+
 
 
 ################### Model 2 #########################
@@ -42,6 +45,8 @@ Classification Report:
    macro avg       0.74      0.51      0.59       276
 weighted avg       0.83      0.82      0.81       276
 
+Best Parameters: {'svc__C': 60, 'svc__gamma': 'scale'}
+Best Score: 0.9963616580873959
 
 ################### Model 3 #########################
 Type: Using a subset v1
@@ -61,6 +66,9 @@ Classification Report:
     accuracy                           0.72       276
    macro avg       0.43      0.38      0.40       276
 weighted avg       0.71      0.72      0.71       276
+
+Best Parameters: {'svc__C': 70, 'svc__gamma': 'scale'}
+Best Score: 0.4366362100543135
 
 
 ################### Model 4 #########################
@@ -82,6 +90,9 @@ Classification Report:
    macro avg       0.53      0.51      0.51       123
 weighted avg       0.62      0.62      0.60       123
 
+Best Parameters: {'svc__C': 60, 'svc__gamma': 'scale'}
+Best Score: 0.523662020169373
+
 
 ################### Model 5 #########################
 Type: Using SMOTE and a Subset (v2)
@@ -102,6 +113,9 @@ Classification Report:
    macro avg       0.49      0.48      0.48       123
 weighted avg       0.59      0.59      0.58       123
 
+Best Parameters: {'svc__C': 20, 'svc__gamma': 'scale'}
+Best Score: 0.8671690809190811
+
 
 ################### Model 6 #########################
 Type: Two model approach
@@ -121,3 +135,11 @@ Classification Report:
     accuracy                           0.74       276
    macro avg       0.50      0.38      0.40       276
 weighted avg       0.75      0.74      0.74       276
+
+Model 1 
+Best Parameters: {'svc__C': 100, 'svc__gamma': 'scale'}
+Best Score: 0.8091750082174975
+
+Model 2
+Best Parameters: {'svc__C': 40, 'svc__gamma': 'scale'}
+Best Score: 0.5021655328798186
