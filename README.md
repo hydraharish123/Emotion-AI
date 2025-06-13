@@ -30,7 +30,7 @@ Both datasets were resized to 64×64 pixels and flattened into vectors of length
 ## Task folder structure
 
 ```
-facial-expression-recognition/
+Emotion-AI/
 │
 ├── 📁 data/                         
 │   ├── ckextended.csv                       # Labeled dataset (e.g., CK+ subset)
